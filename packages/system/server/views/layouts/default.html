@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="https://www.facebook.com/2008/fbml" itemscope="itemscope" itemtype="http://schema.org/Product">
+{% include '../includes/head.html' %}
+
+<body data-ng-controller="ThemeController" ng-cloak class="ng-cloak" ng-class="state">
+    <div class="navbar navbar-inverse navbar-fixed-top" data-ng-include="'/system/views/header.html'" data-role="navigation"></div>
+    {% if adminEnabled %}
+    <section class="admin-menu">
+        <div data-ng-include="'/mean-admin/public/views/index.html'"></div>
+    </section>
+    {% endif %}
+
+
+    <section class="content">
+        <section class="container-fluid fill">
+
+
+            <div class="row">
+              <div class="col-sm-3 col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                  <a class="mylink" href="#/map"><li class="active btn-sidebar">
+                    <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>Add Project
+                  </li></a>
+                </ul>
+                <ul class="nav nav-sidebar">
+                  <a class="mylink" href="#/addDocument"><li class="active btn-sidebar">
+                    <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>Add Document
+                  </li></a>
+                </ul>
+                <ul class="nav nav-sidebar">
+                  <li class="active recent-sidebar" ng-controller="RecentCtrl">
+                    Recent Projects
+                    <ol class="cookie-choices">
+                      <li ng-repeat="rec_prj in recent"><a href="#/project/{{rec_prj.split(':')[2]}}">{{rec_prj}}</a></li>
+                    </ol>
+                  </li>
+                </ul>
+                <ul class="nav nav-sidebar icon-legend">
+                  <li>Document Legend</li>
+                  <li><img src="/assets/img/ab.png" height="20px" width="20px" /> AS-Built</li>
+                  <li><img src="./public/assets/img/cp.png" height="20px" width="20px" /> Construction Plan</li>
+                  <li><img src="./public/assets/img/al.png" height="20px" width="20px" /> Acceptance Letter</li>
+                  <li><img src="./public/assets/img/wl.png" height="20px" width="20px" /> Warranty Letter</li>
+                  <li><img src="./public/assets/img/soc.png" height="20px" width="20px" /> Statement of Cost</li>
+                  <li><img src="./assets/img/pr.png" height="20px" width="20px" /> Permit</li>
+                  <li><img src="../system/public/assets/img/pl.png" height="20px" width="20px" /> Plat</li>
+                </ul>
+
+              </div>
+              {% block content %}
+
+              {% endblock %}
+            </div>
+
+        </section>
+
+    </section>
+    {% include '../includes/foot.html' %}
+</body>
+
+</html>

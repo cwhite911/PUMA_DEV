@@ -1,0 +1,20 @@
+{
+  "name": "mean",
+  "dependencies": {
+    "jquery": "1.x",
+    "angular": "1.3.2",
+    "angular-resource": "1.3.2",
+    "angular-cookies": "~1.3.13",
+    "angular-mocks": "1.3.2",
+    "angular-route": "1.3.2",
+    "bootstrap": "3.1.1",
+    "angular-bootstrap": "0.11.0",
+    "angular-ui-router": "#master",
+    "web-bootstrap": "./node_modules/meanio/resources/web-bootstrap.js",
+    "angular-leaflet": "~0.7.11",
+    "allmighty-autocomplete": "*",
+    "angular-file-upload": "~1.1.5",
+    "terraformer-arcgis-parser": "~1.0.4",
+    "leaflet.draw": "~0.2.3"
+  }
+}

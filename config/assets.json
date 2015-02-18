@@ -1,0 +1,34 @@
+{
+  "core": {
+    "css": {
+      "bower_components/build/css/dist.min.css": [
+        "bower_components/allmighty-autocomplete/style/autocomplete.css",
+        "bower_components/leaflet/dist/leaflet.css",
+        "bower_components/leaflet.draw/dist/leaflet.draw.css"
+      ]
+    },
+    "js": {
+      "bower_components/build/js/dist.min.js": [
+        "bower_components/jquery/dist/jquery.min.js",
+        "bower_components/angular/angular.min.js",
+        "bower_components/angular-mocks/angular-mocks.js",
+        "bower_components/angular-cookies/angular-cookies.min.js",
+        "bower_components/angular-resource/angular-resource.min.js",
+        "bower_components/angular-ui-router/release/angular-ui-router.min.js",
+        "bower_components/angular-cookies/angular-cookies.min.js",
+        "bower_components/angular-bootstrap/ui-bootstrap-tpls.js",
+        "bower_components/web-bootstrap/index.js",
+        "bower_components/angular-arcgis-server/dist/angular-arcgis-server.js",
+        "bower_components/allmighty-autocomplete/script/autocomplete.js",
+        "bower_components/allmighty-autocomplete/script/app.js",
+        "bower_components/angular-file-upload/angular-file-upload.js",
+        "bower_components/ngActivityIndicator/ngActivityIndicator.js",
+        "bower_components/terraformer/terraformer.min.js",
+        "bower_components/terraformer-arcgis-parser/terraformer-arcgis-parser.min.js",
+        "bower_components/leaflet/dist/leaflet-src.js",
+        "bower_components/angular-leaflet/dist/angular-leaflet-directive.min.js",
+        "bower_components/leaflet.draw/dist/leaflet.draw.js"
+      ]
+    }
+  }
+}
